@@ -32,3 +32,8 @@ dist/
 .env.test.local
 .env.production.local
 >>>>>>> 46d65f8 (latest repo)
+
+.env
+.env.*
+!.env.example
+**/node_modules
