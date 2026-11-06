@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "live_locations": {
+      "$requestId": {
+        ".read": "auth != null",
+        "$userId": {
+          ".write": "auth != null && (auth.uid === $userId || root.child('users').child(auth.uid).child('role').val() === 'admin')",
+          ".validate": "newData.hasChildren(['lat', 'lng', 'updated_at']) && newData.child('lat').isNumber() && newData.child('lng').isNumber()"
+        }
+      }
+    }
+  }
+}
+

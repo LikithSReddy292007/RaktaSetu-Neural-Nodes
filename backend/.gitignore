@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+npm-debug.log*
+*.log
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+.vercel
